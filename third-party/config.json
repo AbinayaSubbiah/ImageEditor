@@ -1,0 +1,172 @@
+{
+    "name": "dropdowns",
+    "description": "DropDown Components",
+    "keywords": "ej2-dropdownlist, ej2-combobox, ej2-autocomplete and ej2-multiselect",
+    "components": [
+        {
+            "baseClass": "DropDownList",
+            "directoryName": "drop-down-list",
+            "preferredTag": "input",
+            "skipEventPropagation": true,
+            "type": "form",
+            "twoWays": [
+                "value"
+            ],
+            "comment": [
+                "/**",
+                "*The DropDownList component contains a list of predefined values, from which the user can choose a single value.",
+                "*```html",
+                "*<ej-dropdownlist></ej-dropdownlist>",
+                "*```",
+                "*/"
+            ],
+            "reactComment": [
+                "/**",
+                " * The DropDownList component contains a list of predefined values, from which the user can choose a single value.",
+                " * ```",
+                " * <DropDownListComponent dataSource={data}/>",
+                " * ```",
+                " */"
+            ],
+            "templateProperties": [
+                "footerTemplate",
+                "headerTemplate",
+                "valueTemplate",
+                "groupTemplate",
+                "itemTemplate",
+                {
+                    "name": "noRecordsTemplate",
+                    "defaultValue": "No Records Found"
+                },
+                {
+                    "name": "actionFailureTemplate",
+                    "defaultValue": "The Request Failed"
+                }
+            ]
+        },
+        {
+            "baseClass": "ComboBox",
+            "directoryName": "combo-box",
+            "preferredTag": "input",
+            "skipEventPropagation": true,
+            "type": "form",
+            "twoWays": [
+                "value"
+            ],
+            "comment": [
+                "/**",
+                "*The ComboBox component allows the user to type a value or choose an option from the list of predefined options.",
+                "*```html",
+                "*<ej-combobox></ej-combobox>",
+                "*```",
+                "*/"
+            ],
+            "reactComment": [
+                "/**",
+                " *The ComboBox component allows the user to type a value or choose an option from the list of predefined options.",
+                " * ```",
+                " * <ComboBoxComponent dataSource={data}/>",
+                " * ```",
+                " */"
+            ],
+            "templateProperties": [
+                "footerTemplate",
+                "headerTemplate",
+                "groupTemplate",
+                "itemTemplate",
+                {
+                    "name": "noRecordsTemplate",
+                    "defaultValue": "No Records Found"
+                },
+                {
+                    "name": "actionFailureTemplate",
+                    "defaultValue": "The Request Failed"
+                }
+            ]
+        },
+        {
+            "baseClass": "AutoComplete",
+            "directoryName": "auto-complete",
+            "preferredTag": "input",
+            "skipEventPropagation": true,
+            "type": "form",
+            "twoWays": [
+                "value"
+            ],
+            "comment": [
+                "/**",
+                " *The AutoComplete component provides the matched suggestion list when type into the input, from which the user can select one.",
+                "*```html",
+                "*<ej-autocomplete></ej-autocomplete>",
+                "*```",
+                "*/"
+            ],
+            "reactComment": [
+                "/**",
+                " *The AutoComplete component provides the matched suggestion list when type into the input, from which the user can select one.",
+                " * ```",
+                " * <AutoCompleteComponent dataSource={data}/>",
+                " * ```",
+                " */"
+            ],
+            "templateProperties": [
+                "footerTemplate",
+                "headerTemplate",
+                "groupTemplate",
+                "itemTemplate",
+                {
+                    "name": "noRecordsTemplate",
+                    "defaultValue": "No Records Found"
+                },
+                {
+                    "name": "actionFailureTemplate",
+                    "defaultValue": "The Request Failed"
+                }
+            ]
+        },
+        {
+            "baseClass": "MultiSelect",
+            "directoryName": "multi-select",
+            "preferredTag": "input",
+            "skipEventPropagation": true,
+            "type": "form",
+            "twoWays": [
+                "value"
+            ],
+            "comment": [
+                "/**",
+                "* The MultiSelect allows the user to pick a values from the predefined list of values.",
+                "*```html",
+                "*<ej-multiselect></ej-multiselect>",
+                "*```",
+                "*/"
+            ],
+            "reactComment": [
+                "/**",
+                "* The MultiSelect allows the user to pick a values from the predefined list of values.",
+                " * ```",
+                " * <MultiSelectComponent dataSource={data}/>",
+                " * ```",
+                " */"
+            ],
+            "templateProperties": [
+                "footerTemplate",
+                "headerTemplate",
+                "valueTemplate",
+                "itemTemplate",
+                {
+                    "name": "noRecordsTemplate",
+                    "defaultValue": "No Records Found"
+                },
+                {
+                    "name": "actionFailureTemplate",
+                    "defaultValue": "The Request Failed"
+                }
+            ]
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/syncfusion/ej2-dropdowns/"
+    }
+}

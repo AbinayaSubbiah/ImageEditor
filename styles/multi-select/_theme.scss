@@ -1,0 +1,116 @@
+﻿.e-multi-select-wrapper .e-chips.e-chip-selected .e-chips-close.e-icon::before {
+  color: $sel-chip-close;
+}
+
+.e-multi-select-wrapper .e-chips.e-chip-selected {
+  background-color: $sel-chip-bg-color;
+}
+
+.e-multi-select-wrapper .e-chips.e-chip-selected:hover {
+  background-color: $sel-hover-chip-bg-color;
+}
+
+#{&}.e-multiselect {
+  box-sizing: border-box;
+}
+
+.e-multi-select-wrapper .e-chips>.e-chipcontent {
+  color: $chip-font-color;
+  font-family: $chip-font-family;
+  font-size: $chip-font-size;
+}
+
+.e-multi-select-wrapper .e-chips.e-chip-selected>.e-chipcontent {
+  color: $sel-chip-font-color;
+}
+
+.e-multi-select-wrapper .e-chips.e-chip-selected>.e-chipcontent:hover {
+  color: $sel-chip-hover-font-color;
+}
+
+.e-multi-select-wrapper .e-chips {
+  background-color: $chip-bg-color;
+  border-radius: $chip-radius;
+  height: $chip-height;
+}
+
+.e-multi-select-wrapper .e-chips:hover {
+  background-color: $chip-hover-bg-color;
+}
+
+.e-multi-select-wrapper .e-chips>.e-chipcontent:hover {
+  color: $chip-hover-font-color;
+}
+
+.e-multi-select-wrapper .e-chips .e-chips-close.e-icon::before {
+  color: $chip-close;
+  font-size: $chip-close-font;
+}
+
+.e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected {
+  background-color: $chip-mobile-bg;
+  border-radius: $chip-mobile-radius;
+  color: $chip-mobile-font;
+  height: $chip-sel-mobile-height;
+}
+
+.e-multi-select-wrapper .e-chips.e-mob-chip.e-chip-selected .e-chipcontent {
+  color: $chip-mobile-font;
+}
+
+.e-multi-select-wrapper .e-chips.e-mob-chip,
+.e-bigger .e-multi-select-wrapper .e-chips {
+  height: $chip-mobile-height;
+}
+
+#{&}.e-popup.e-multi-select-list-wrapper {
+  box-shadow: $popup-shadow-value;
+  box-sizing: content-box;
+}
+
+#{&}.e-popup.e-multi-select-list-wrapper .e-list-item.e-active {
+  border-bottom: $popup-active-border-width solid transparent;
+  border-left: $popup-active-border-width solid $popup-active-focus-bg-color;
+  border-right: $popup-active-border-width solid $popup-active-focus-bg-color;
+  border-top: $popup-active-border-width solid $popup-active-border-color;
+}
+
+#{&}.e-popup.e-multi-select-list-wrapper .e-list-item.e-active:first-child {
+  border-bottom: $popup-active-border-width solid transparent;
+  border-top: $popup-active-border-width solid transparent;
+}
+
+#{&}.e-popup.e-multi-select-list-wrapper .e-list-item.e-active:last-child {
+  border-bottom: $popup-active-border-width solid transparent;
+}
+
+#{&}.e-popup.e-multi-select-list-wrapper .e-list-item.e-active.e-item-focus + li.e-active {
+  border-top: $popup-active-border-width solid transparent;
+}
+
+#{&}.e-popup.e-multi-select-list-wrapper .e-list-item.e-active.e-item-focus {
+  background-color: $popup-active-focus-bg-color;
+  border: $popup-active-focus-border-width solid $popup-active-focus-border-color;
+  box-shadow: $popup-active-focus-shadow-item;
+  color: $popup-active-focus-font-color;
+}
+
+// sass-lint:disable no-vendor-prefixes
+.e-multi-select-wrapper input.e-dropdownbase:-moz-placeholder {
+  color: $input-placeholder;
+}
+
+// sass-lint:disable no-vendor-prefixes
+.e-multi-select-wrapper input.e-dropdownbase::-moz-placeholder {
+  color: $input-placeholder;
+}
+
+// sass-lint:disable no-vendor-prefixes
+.e-multi-select-wrapper input.e-dropdownbase:-ms-input-placeholder {
+  color: $input-placeholder;
+}
+
+// sass-lint:disable no-vendor-prefixes
+.e-multi-select-wrapper input.e-dropdownbase::-webkit-input-placeholder {
+  color: $input-placeholder;
+}

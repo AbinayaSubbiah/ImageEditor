@@ -1,0 +1,15 @@
+﻿.e-multi-select-wrapper .e-close-hooker::before {
+  content: $overall-close-icon;
+  cursor: pointer;
+  left: $overall-close-left;
+  position: relative;
+  top: $overall-close-top;
+}
+
+.e-multi-select-wrapper .e-chips .e-chips-close.e-icon::before {
+  content: $chip-close-icon;
+  cursor: pointer;
+  left: $chip-close-left;
+  position: relative;
+  top: $chip-close-top;
+}

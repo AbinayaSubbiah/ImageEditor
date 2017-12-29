@@ -1,0 +1,24 @@
+{
+    "spec": ["./spec/**/*.spec.js"],
+    "styles": ["./styles/**/*.scss"],
+    "sasslint": ["./styles/**/*.scss"],
+    "typedoc": ["./src/**/*.ts"],
+    "tslint": ["./src/**/*.ts", "!./src/**/*-model.d.ts", "!./src/**/**/*-builder.d.ts"],
+    "styleDependency": [{ "drop-down-base": [] }, { "drop-down-list": ["ej2-inputs", "ej2-popups"] }, { "combo-box": ["./../drop-down-list"] }, { "auto-complete": ["./../drop-down-list"] }, { "multi-select":  ["ej2-inputs", "ej2-popups"] }],
+    "components": ["drop-down-base", "drop-down-list", "combo-box", "auto-complete", "multi-select"],
+    "customWords": ["li", "l10n", "dropdownbase", "dropdownlist", "300px", "readonly", "popup", "combobox", "autofill", "globalization", "api", "multiselect"],
+    "baseMapping": ["drop-down-base", "drop-down-list"],
+    "changelogTypo": [
+		"Dropdown",
+		"DropDownList",
+		"popup",
+		"Popup",
+		"actionFailureTemplate",
+		"noRecordsTemplate",
+		"ComboBox",
+		"popupHeight",
+		"300px.",
+		"MultiSelect",
+		"valueTemplate"
+	]
+}

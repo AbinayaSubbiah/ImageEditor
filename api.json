@@ -1,0 +1,6286 @@
+{
+	"auto-complete/auto-complete": {
+		"classes": {
+			"AutoComplete": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"allowCustom": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"autofill": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"cssClass": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{ value: null, iconCss: null, groupBy: null}\n"
+					},
+					"filterType": {
+						"type": {
+							"type": "reference",
+							"name": "FilterType"
+						},
+						"defaultvalue": "'Contains'.\n"
+					},
+					"floatLabelType": {
+						"type": {
+							"type": "reference",
+							"name": "FloatLabelType"
+						},
+						"defaultvalue": "'Never'.\n"
+					},
+					"footerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"headerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"highlight": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"htmlAttributes": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": "{}.\n"
+					},
+					"ignoreCase": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"minLength": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "1.\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"placeholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"popupHeight": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'300px'.\n"
+					},
+					"popupWidth": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"readonly": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"showClearButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"showPopupButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					},
+					"suggestionCount": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "20.\n"
+					},
+					"value": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "number"
+								},
+								{
+									"type": "intrinsic",
+									"name": "string"
+								}
+							]
+						},
+						"defaultvalue": "null.\n"
+					},
+					"width": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					}
+				},
+				"methods": {
+					"addItem": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {
+							"items": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "array",
+											"elementType": {
+												"type": "reflection",
+												"declaration": {
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "reference",
+																"name": "Object"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"indexSignature": [
+													{
+														"name": "__index",
+														"kind": 8192,
+														"kindString": "Index signature",
+														"flags": {},
+														"parameters": [
+															{
+																"name": "key",
+																"kind": 32768,
+																"kindString": "Parameter",
+																"flags": {},
+																"type": {
+																	"type": "intrinsic",
+																	"name": "string"
+																}
+															}
+														],
+														"type": {
+															"type": "reference",
+															"name": "Object"
+														}
+													}
+												]
+											}
+										}
+									]
+								}
+							},
+							"itemIndex": {
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							}
+						}
+					},
+					"destroy": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"focusIn": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"focusOut": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"getDataByValue": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "reference",
+											"name": "Object"
+										}
+									}
+								]
+							}
+						},
+						"parameters": {
+							"value": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										}
+									]
+								}
+							}
+						}
+					},
+					"getItems": {
+						"type": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "Element"
+							}
+						},
+						"parameters": {}
+					},
+					"hidePopup": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"showPopup": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					}
+				},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"blur": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"change": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "ChangeEventArgs"
+								}
+							]
+						}
+					},
+					"close": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"customValueSpecifier": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "CustomValueSpecifierEventArgs"
+								}
+							]
+						}
+					},
+					"filtering": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "FilteringArgs"
+								}
+							]
+						}
+					},
+					"focus": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"open": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"interfaces": {
+			"FilteringArgs": {
+				"apis": {
+					"baseEventArgs": {
+						"type": {
+							"type": "reference",
+							"name": "Object"
+						},
+						"defaultvalue": null
+					},
+					"preventDefaultAction": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": null
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {
+					"updateData": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {
+							"dataSource": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "array",
+											"elementType": {
+												"type": "reflection",
+												"declaration": {
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "reference",
+																"name": "Object"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"type": "reference",
+											"name": "DataManager"
+										},
+										{
+											"type": "array",
+											"elementType": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"type": "array",
+											"elementType": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									]
+								}
+							},
+							"query": {
+								"type": {
+									"type": "reference",
+									"name": "Query"
+								}
+							},
+							"fields": {
+								"type": {
+									"type": "reference",
+									"name": "FieldSettings"
+								}
+							}
+						}
+					}
+				},
+				"events": {}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	},
+	"auto-complete/auto-complete-model.d": {
+		"classes": {},
+		"interfaces": {
+			"AutoCompleteModel": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"allowCustom": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"autofill": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"cssClass": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{ value: null, iconCss: null, groupBy: null}\n"
+					},
+					"filterType": {
+						"type": {
+							"type": "reference",
+							"name": "FilterType"
+						},
+						"defaultvalue": "'Contains'.\n"
+					},
+					"floatLabelType": {
+						"type": {
+							"type": "reference",
+							"name": "FloatLabelType"
+						},
+						"defaultvalue": "'Never'.\n"
+					},
+					"footerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"headerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"highlight": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"htmlAttributes": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": "{}.\n"
+					},
+					"ignoreCase": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"locale": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "undefined\n"
+					},
+					"minLength": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "1.\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"placeholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"popupHeight": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'300px'.\n"
+					},
+					"popupWidth": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"readonly": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"showClearButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"showPopupButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					},
+					"suggestionCount": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "20.\n"
+					},
+					"value": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "number"
+								},
+								{
+									"type": "intrinsic",
+									"name": "string"
+								}
+							]
+						},
+						"defaultvalue": "null.\n"
+					},
+					"width": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					}
+				},
+				"methods": {},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"blur": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"change": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "ChangeEventArgs"
+								}
+							]
+						}
+					},
+					"close": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"customValueSpecifier": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "CustomValueSpecifierEventArgs"
+								}
+							]
+						}
+					},
+					"filtering": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "FilteringArgs"
+								}
+							]
+						}
+					},
+					"focus": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"open": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	},
+	"auto-complete/index": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {}
+	},
+	"combo-box/combo-box": {
+		"classes": {
+			"ComboBox": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"allowCustom": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"allowFiltering": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"autofill": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"cssClass": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{text: null, value: null, iconCss: null, groupBy: null}\n"
+					},
+					"floatLabelType": {
+						"type": {
+							"type": "reference",
+							"name": "FloatLabelType"
+						},
+						"defaultvalue": "'Never'.\n"
+					},
+					"footerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"headerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"htmlAttributes": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": "{}.\n"
+					},
+					"index": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"placeholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"popupHeight": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'300px'.\n"
+					},
+					"popupWidth": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"readonly": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"showClearButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"value": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "number"
+								},
+								{
+									"type": "intrinsic",
+									"name": "string"
+								}
+							]
+						},
+						"defaultvalue": "null.\n"
+					},
+					"width": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					}
+				},
+				"methods": {
+					"addItem": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {
+							"items": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "array",
+											"elementType": {
+												"type": "reflection",
+												"declaration": {
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "reference",
+																"name": "Object"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"indexSignature": [
+													{
+														"name": "__index",
+														"kind": 8192,
+														"kindString": "Index signature",
+														"flags": {},
+														"parameters": [
+															{
+																"name": "key",
+																"kind": 32768,
+																"kindString": "Parameter",
+																"flags": {},
+																"type": {
+																	"type": "intrinsic",
+																	"name": "string"
+																}
+															}
+														],
+														"type": {
+															"type": "reference",
+															"name": "Object"
+														}
+													}
+												]
+											}
+										}
+									]
+								}
+							},
+							"itemIndex": {
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							}
+						}
+					},
+					"destroy": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"focusIn": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"focusOut": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"getDataByValue": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "reference",
+											"name": "Object"
+										}
+									}
+								]
+							}
+						},
+						"parameters": {
+							"value": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										}
+									]
+								}
+							}
+						}
+					},
+					"getItems": {
+						"type": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "Element"
+							}
+						},
+						"parameters": {}
+					},
+					"hidePopup": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"showPopup": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					}
+				},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"blur": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"change": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "ChangeEventArgs"
+								}
+							]
+						}
+					},
+					"close": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"customValueSpecifier": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "CustomValueSpecifierEventArgs"
+								}
+							]
+						}
+					},
+					"filtering": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "FilteringEventArgs"
+								}
+							]
+						}
+					},
+					"focus": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"open": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"interfaces": {
+			"CustomValueSpecifierEventArgs": {
+				"apis": {
+					"item": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "union",
+											"types": [
+												{
+													"type": "intrinsic",
+													"name": "string"
+												},
+												{
+													"type": "reference",
+													"name": "Object"
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": null
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	},
+	"combo-box/combo-box-model.d": {
+		"classes": {},
+		"interfaces": {
+			"ComboBoxModel": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"allowCustom": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"allowFiltering": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"autofill": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"cssClass": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{text: null, value: null, iconCss: null, groupBy: null}\n"
+					},
+					"floatLabelType": {
+						"type": {
+							"type": "reference",
+							"name": "FloatLabelType"
+						},
+						"defaultvalue": "'Never'.\n"
+					},
+					"footerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"headerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"htmlAttributes": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": "{}.\n"
+					},
+					"index": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"locale": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "undefined\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"placeholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"popupHeight": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'300px'.\n"
+					},
+					"popupWidth": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"readonly": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"showClearButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"value": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "number"
+								},
+								{
+									"type": "intrinsic",
+									"name": "string"
+								}
+							]
+						},
+						"defaultvalue": "null.\n"
+					},
+					"width": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					}
+				},
+				"methods": {},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"blur": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"change": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "ChangeEventArgs"
+								}
+							]
+						}
+					},
+					"close": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"customValueSpecifier": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "CustomValueSpecifierEventArgs"
+								}
+							]
+						}
+					},
+					"filtering": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "FilteringEventArgs"
+								}
+							]
+						}
+					},
+					"focus": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"open": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	},
+	"combo-box/index": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {}
+	},
+	"common/highlight-search": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {
+			"highlightSearch": {
+				"type": {
+					"type": "intrinsic",
+					"name": "void"
+				},
+				"parameters": {
+					"content": {
+						"type": {
+							"type": "reference",
+							"name": "HTMLElement"
+						}
+					},
+					"query": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"ignoreCase": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						}
+					},
+					"type": {
+						"type": {
+							"type": "reference",
+							"name": "HightLightType"
+						}
+					}
+				}
+			}
+		}
+	},
+	"common/incremental-search": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {
+			"Search": {
+				"type": {
+					"type": "reflection",
+					"declaration": {
+						"name": "__type",
+						"kind": 65536,
+						"kindString": "Type literal",
+						"flags": {},
+						"indexSignature": [
+							{
+								"name": "__index",
+								"kind": 8192,
+								"kindString": "Index signature",
+								"flags": {},
+								"parameters": [
+									{
+										"name": "key",
+										"kind": 32768,
+										"kindString": "Parameter",
+										"flags": {},
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								],
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"name": "Element"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				"parameters": {
+					"inputVal": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"items": {
+						"type": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "HTMLElement"
+							}
+						}
+					},
+					"searchType": {
+						"type": {
+							"type": "reference",
+							"name": "SearchType"
+						}
+					},
+					"ignoreCase": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						}
+					}
+				}
+			},
+			"incrementalSearch": {
+				"type": {
+					"type": "reference",
+					"name": "Element"
+				},
+				"parameters": {
+					"keyCode": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						}
+					},
+					"items": {
+						"type": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "HTMLElement"
+							}
+						}
+					},
+					"selectedIndex": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						}
+					},
+					"ignoreCase": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						}
+					}
+				}
+			}
+		}
+	},
+	"common/index": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {}
+	},
+	"drop-down-base/drop-down-base": {
+		"classes": {
+			"DropDownBase": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{text: null, value: null, iconCss: null, groupBy: null}\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					}
+				},
+				"methods": {
+					"addItem": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {
+							"items": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "array",
+											"elementType": {
+												"type": "reflection",
+												"declaration": {
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "reference",
+																"name": "Object"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"indexSignature": [
+													{
+														"name": "__index",
+														"kind": 8192,
+														"kindString": "Index signature",
+														"flags": {},
+														"parameters": [
+															{
+																"name": "key",
+																"kind": 32768,
+																"kindString": "Parameter",
+																"flags": {},
+																"type": {
+																	"type": "intrinsic",
+																	"name": "string"
+																}
+															}
+														],
+														"type": {
+															"type": "reference",
+															"name": "Object"
+														}
+													}
+												]
+											}
+										}
+									]
+								}
+							},
+							"itemIndex": {
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							}
+						}
+					},
+					"destroy": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"getDataByValue": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "reference",
+											"name": "Object"
+										}
+									}
+								]
+							}
+						},
+						"parameters": {
+							"value": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										}
+									]
+								}
+							}
+						}
+					},
+					"getItems": {
+						"type": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "Element"
+							}
+						},
+						"parameters": {}
+					}
+				},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"interfaces": {
+			"DropDownBaseClassList": {
+				"apis": {
+					"content": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"disabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"fixedHead": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"focus": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"group": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"grouping": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"hover": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"li": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"noData": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"root": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"rtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"selected": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			},
+			"FieldSettings": {
+				"apis": {
+					"groupBy": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"iconCss": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"value": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			},
+			"SelectEventArgs": {
+				"apis": {
+					"e": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "reference",
+									"name": "MouseEvent"
+								},
+								{
+									"type": "reference",
+									"name": "KeyboardEvent"
+								},
+								{
+									"type": "reference",
+									"name": "TouchEvent"
+								}
+							]
+						},
+						"defaultvalue": null
+					},
+					"isInteracted": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": null
+					},
+					"item": {
+						"type": {
+							"type": "reference",
+							"name": "HTMLLIElement"
+						},
+						"defaultvalue": null
+					},
+					"itemData": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			}
+		},
+		"apis": {
+			"SPINNER_SIZE": {
+				"type": {
+					"type": "intrinsic",
+					"name": "string"
+				},
+				"defaultvalue": " Browser.isDevice ? '16px' : '14px'"
+			}
+		},
+		"methods": {}
+	},
+	"drop-down-base/drop-down-base-model.d": {
+		"classes": {},
+		"interfaces": {
+			"DropDownBaseModel": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{text: null, value: null, iconCss: null, groupBy: null}\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"locale": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "undefined\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					}
+				},
+				"methods": {},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	},
+	"drop-down-base/index": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {}
+	},
+	"drop-down-list/drop-down-list": {
+		"classes": {
+			"DropDownList": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"allowFiltering": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"cssClass": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{text: null, value: null, iconCss: null, groupBy: null}\n"
+					},
+					"filterBarPlaceholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"floatLabelType": {
+						"type": {
+							"type": "reference",
+							"name": "FloatLabelType"
+						},
+						"defaultvalue": "'Never'.\n"
+					},
+					"footerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"headerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"htmlAttributes": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": "{}.\n"
+					},
+					"index": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"placeholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"popupHeight": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'300px'.\n"
+					},
+					"popupWidth": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"readonly": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"showClearButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"value": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "number"
+								},
+								{
+									"type": "intrinsic",
+									"name": "string"
+								}
+							]
+						},
+						"defaultvalue": "null.\n"
+					},
+					"valueTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"width": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					}
+				},
+				"methods": {
+					"addItem": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {
+							"items": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "array",
+											"elementType": {
+												"type": "reflection",
+												"declaration": {
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "reference",
+																"name": "Object"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"indexSignature": [
+													{
+														"name": "__index",
+														"kind": 8192,
+														"kindString": "Index signature",
+														"flags": {},
+														"parameters": [
+															{
+																"name": "key",
+																"kind": 32768,
+																"kindString": "Parameter",
+																"flags": {},
+																"type": {
+																	"type": "intrinsic",
+																	"name": "string"
+																}
+															}
+														],
+														"type": {
+															"type": "reference",
+															"name": "Object"
+														}
+													}
+												]
+											}
+										}
+									]
+								}
+							},
+							"itemIndex": {
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							}
+						}
+					},
+					"destroy": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"focusIn": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"focusOut": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"getDataByValue": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "reference",
+											"name": "Object"
+										}
+									}
+								]
+							}
+						},
+						"parameters": {
+							"value": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										}
+									]
+								}
+							}
+						}
+					},
+					"getItems": {
+						"type": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "Element"
+							}
+						},
+						"parameters": {}
+					},
+					"hidePopup": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"showPopup": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					}
+				},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"blur": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"change": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "ChangeEventArgs"
+								}
+							]
+						}
+					},
+					"close": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"filtering": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "FilteringEventArgs"
+								}
+							]
+						}
+					},
+					"focus": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"open": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"interfaces": {
+			"ChangeEventArgs": {
+				"apis": {
+					"e": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "reference",
+									"name": "MouseEvent"
+								},
+								{
+									"type": "reference",
+									"name": "KeyboardEvent"
+								},
+								{
+									"type": "reference",
+									"name": "TouchEvent"
+								}
+							]
+						},
+						"defaultvalue": null
+					},
+					"isInteracted": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": null
+					},
+					"item": {
+						"type": {
+							"type": "reference",
+							"name": "HTMLLIElement"
+						},
+						"defaultvalue": null
+					},
+					"itemData": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": null
+					},
+					"value": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "number"
+								},
+								{
+									"type": "intrinsic",
+									"name": "string"
+								}
+							]
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			},
+			"DropDownListClassList": {
+				"apis": {
+					"backIcon": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"base": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"clearIcon": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"clearIconHide": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"device": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"disable": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"disableIcon": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"filterBarClearIcon": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"filterInput": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"filterParent": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"focus": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"footer": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"header": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"hover": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"icon": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"iconAnimation": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"input": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"inputFocus": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"li": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"mobileFilter": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"popupFullScreen": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"root": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"rtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"selected": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					},
+					"value": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			},
+			"FilteringEventArgs": {
+				"apis": {
+					"baseEventArgs": {
+						"type": {
+							"type": "reference",
+							"name": "Object"
+						},
+						"defaultvalue": null
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {
+					"updateData": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {
+							"dataSource": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "array",
+											"elementType": {
+												"type": "reflection",
+												"declaration": {
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "reference",
+																"name": "Object"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"type": "reference",
+											"name": "DataManager"
+										},
+										{
+											"type": "array",
+											"elementType": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"type": "array",
+											"elementType": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									]
+								}
+							},
+							"query": {
+								"type": {
+									"type": "reference",
+									"name": "Query"
+								}
+							},
+							"fields": {
+								"type": {
+									"type": "reference",
+									"name": "FieldSettings"
+								}
+							}
+						}
+					}
+				},
+				"events": {}
+			},
+			"PopupEventArgs": {
+				"apis": {
+					"popup": {
+						"type": {
+							"type": "reference",
+							"name": "Popup"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	},
+	"drop-down-list/drop-down-list-model.d": {
+		"classes": {},
+		"interfaces": {
+			"DropDownListModel": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"allowFiltering": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"cssClass": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{text: null, value: null, iconCss: null, groupBy: null}\n"
+					},
+					"filterBarPlaceholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"floatLabelType": {
+						"type": {
+							"type": "reference",
+							"name": "FloatLabelType"
+						},
+						"defaultvalue": "'Never'.\n"
+					},
+					"footerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"headerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"htmlAttributes": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": "{}.\n"
+					},
+					"index": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"locale": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "undefined\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"placeholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"popupHeight": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'300px'.\n"
+					},
+					"popupWidth": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"readonly": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"showClearButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"value": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "number"
+								},
+								{
+									"type": "intrinsic",
+									"name": "string"
+								}
+							]
+						},
+						"defaultvalue": "null.\n"
+					},
+					"valueTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"width": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'.\n"
+					}
+				},
+				"methods": {},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"blur": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"change": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "ChangeEventArgs"
+								}
+							]
+						}
+					},
+					"close": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"filtering": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "FilteringEventArgs"
+								}
+							]
+						}
+					},
+					"focus": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"open": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	},
+	"drop-down-list/index": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {}
+	},
+	"index": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {}
+	},
+	"multi-select/index": {
+		"classes": {},
+		"interfaces": {},
+		"apis": {},
+		"methods": {}
+	},
+	"multi-select/multi-select": {
+		"classes": {
+			"MultiSelect": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"allowCustomValue": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"allowFiltering": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"closePopupOnSelect": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true\n"
+					},
+					"cssClass": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"delimiterChar": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": ",\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{text: null, value: null, iconCss: null, groupBy: null}\n"
+					},
+					"footerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"headerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"hideSelectedItem": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"htmlAttributes": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": "{}\n"
+					},
+					"ignoreCase": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"maximumSelectionLength": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "1000\n"
+					},
+					"mode": {
+						"type": {
+							"type": "reference",
+							"name": "visualMode"
+						},
+						"defaultvalue": "default\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"placeholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"popupHeight": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'300px'\n"
+					},
+					"popupWidth": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"readonly": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"showClearButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"value": {
+						"type": {
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "number"
+										},
+										{
+											"type": "intrinsic",
+											"name": "string"
+										}
+									]
+								}
+							]
+						},
+						"defaultvalue": "null\n"
+					},
+					"valueTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"width": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'\n"
+					}
+				},
+				"methods": {
+					"addItem": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {
+							"items": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "array",
+											"elementType": {
+												"type": "reflection",
+												"declaration": {
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"indexSignature": [
+														{
+															"name": "__index",
+															"kind": 8192,
+															"kindString": "Index signature",
+															"flags": {},
+															"parameters": [
+																{
+																	"name": "key",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "reference",
+																"name": "Object"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"indexSignature": [
+													{
+														"name": "__index",
+														"kind": 8192,
+														"kindString": "Index signature",
+														"flags": {},
+														"parameters": [
+															{
+																"name": "key",
+																"kind": 32768,
+																"kindString": "Parameter",
+																"flags": {},
+																"type": {
+																	"type": "intrinsic",
+																	"name": "string"
+																}
+															}
+														],
+														"type": {
+															"type": "reference",
+															"name": "Object"
+														}
+													}
+												]
+											}
+										}
+									]
+								}
+							},
+							"itemIndex": {
+								"type": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							}
+						}
+					},
+					"destroy": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"getDataByValue": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "reference",
+											"name": "Object"
+										}
+									}
+								]
+							}
+						},
+						"parameters": {
+							"value": {
+								"type": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										}
+									]
+								}
+							}
+						}
+					},
+					"getItems": {
+						"type": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "Element"
+							}
+						},
+						"parameters": {}
+					},
+					"getModuleName": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"parameters": {}
+					},
+					"hidePopup": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					},
+					"selectAll": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {
+							"state": {
+								"type": {
+									"type": "intrinsic",
+									"name": "boolean"
+								}
+							}
+						}
+					},
+					"showPopup": {
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"parameters": {}
+					}
+				},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"blur": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"change": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "MultiSelectChangeEventArgs"
+								}
+							]
+						}
+					},
+					"close": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"customValueSelection": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "CustomValueEventArgs"
+								}
+							]
+						}
+					},
+					"filtering": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "FilteringEventArgs"
+								}
+							]
+						}
+					},
+					"focus": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"open": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"removed": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "RemoveEventArgs"
+								}
+							]
+						}
+					},
+					"removing": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "RemoveEventArgs"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					},
+					"tagging": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "TaggingEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"interfaces": {
+			"CustomValueEventArgs": {
+				"apis": {
+					"newData": {
+						"type": {
+							"type": "reference",
+							"name": "Object"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			},
+			"MultiSelectChangeEventArgs": {
+				"apis": {
+					"e": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "reference",
+									"name": "MouseEvent"
+								},
+								{
+									"type": "reference",
+									"name": "KeyboardEvent"
+								},
+								{
+									"type": "reference",
+									"name": "TouchEvent"
+								}
+							]
+						},
+						"defaultvalue": null
+					},
+					"isInteracted": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": null
+					},
+					"oldValue": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							]
+						},
+						"defaultvalue": null
+					},
+					"value": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							]
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			},
+			"RemoveEventArgs": {
+				"apis": {
+					"e": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "reference",
+									"name": "MouseEvent"
+								},
+								{
+									"type": "reference",
+									"name": "KeyboardEvent"
+								},
+								{
+									"type": "reference",
+									"name": "TouchEvent"
+								}
+							]
+						},
+						"defaultvalue": null
+					},
+					"isInteracted": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": null
+					},
+					"item": {
+						"type": {
+							"type": "reference",
+							"name": "HTMLLIElement"
+						},
+						"defaultvalue": null
+					},
+					"itemData": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			},
+			"TaggingEventArgs": {
+				"apis": {
+					"e": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "reference",
+									"name": "MouseEvent"
+								},
+								{
+									"type": "reference",
+									"name": "KeyboardEvent"
+								},
+								{
+									"type": "reference",
+									"name": "TouchEvent"
+								}
+							]
+						},
+						"defaultvalue": null
+					},
+					"isInteracted": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": null
+					},
+					"itemData": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": null
+					},
+					"setClass": {
+						"type": {
+							"type": "reference",
+							"name": "Function"
+						},
+						"defaultvalue": null
+					}
+				},
+				"methods": {},
+				"events": {}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	},
+	"multi-select/multi-select-model.d": {
+		"classes": {},
+		"interfaces": {
+			"MultiSelectModel": {
+				"apis": {
+					"actionFailureTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'The Request Failed'.\n"
+					},
+					"allowCustomValue": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"allowFiltering": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"closePopupOnSelect": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true\n"
+					},
+					"cssClass": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"dataSource": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "array",
+									"elementType": {
+										"type": "reflection",
+										"declaration": {
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"indexSignature": [
+												{
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {},
+													"parameters": [
+														{
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "reference",
+														"name": "Object"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"type": "reference",
+									"name": "DataManager"
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"type": "array",
+									"elementType": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							]
+						},
+						"defaultvalue": "[].\n"
+					},
+					"delimiterChar": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": ",\n"
+					},
+					"enablePersistence": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enableRtl": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false.\n"
+					},
+					"enabled": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true.\n"
+					},
+					"fields": {
+						"type": {
+							"type": "reference",
+							"name": "FieldSettings"
+						},
+						"defaultvalue": "{text: null, value: null, iconCss: null, groupBy: null}\n"
+					},
+					"footerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"groupTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"headerTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"hideSelectedItem": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"htmlAttributes": {
+						"type": {
+							"type": "reflection",
+							"declaration": {
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"indexSignature": [
+									{
+										"name": "__index",
+										"kind": 8192,
+										"kindString": "Index signature",
+										"flags": {},
+										"parameters": [
+											{
+												"name": "key",
+												"kind": 32768,
+												"kindString": "Parameter",
+												"flags": {},
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								]
+							}
+						},
+						"defaultvalue": "{}\n"
+					},
+					"ignoreCase": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"itemTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"locale": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "undefined\n"
+					},
+					"maximumSelectionLength": {
+						"type": {
+							"type": "intrinsic",
+							"name": "number"
+						},
+						"defaultvalue": "1000\n"
+					},
+					"mode": {
+						"type": {
+							"type": "reference",
+							"name": "visualMode"
+						},
+						"defaultvalue": "default\n"
+					},
+					"noRecordsTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "'No Records Found'.\n"
+					},
+					"placeholder": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"popupHeight": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'300px'\n"
+					},
+					"popupWidth": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'\n"
+					},
+					"query": {
+						"type": {
+							"type": "reference",
+							"name": "Query"
+						},
+						"defaultvalue": "null.\n"
+					},
+					"readonly": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "false\n"
+					},
+					"showClearButton": {
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"defaultvalue": "true\n"
+					},
+					"sortOrder": {
+						"type": {
+							"type": "reference",
+							"name": "SortOrder"
+						},
+						"defaultvalue": "None.\n"
+					},
+					"text": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"value": {
+						"type": {
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "number"
+										},
+										{
+											"type": "intrinsic",
+											"name": "string"
+										}
+									]
+								}
+							]
+						},
+						"defaultvalue": "null\n"
+					},
+					"valueTemplate": {
+						"type": {
+							"type": "intrinsic",
+							"name": "string"
+						},
+						"defaultvalue": "null\n"
+					},
+					"width": {
+						"type": {
+							"type": "union",
+							"types": [
+								{
+									"type": "intrinsic",
+									"name": "string"
+								},
+								{
+									"type": "intrinsic",
+									"name": "number"
+								}
+							]
+						},
+						"defaultvalue": "'100%'\n"
+					}
+				},
+				"methods": {},
+				"events": {
+					"actionBegin": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionComplete": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"actionFailure": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"blur": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"change": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "MultiSelectChangeEventArgs"
+								}
+							]
+						}
+					},
+					"close": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"customValueSelection": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "CustomValueEventArgs"
+								}
+							]
+						}
+					},
+					"filtering": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "FilteringEventArgs"
+								}
+							]
+						}
+					},
+					"focus": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "Object"
+								}
+							]
+						}
+					},
+					"open": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "PopupEventArgs"
+								}
+							]
+						}
+					},
+					"removed": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "RemoveEventArgs"
+								}
+							]
+						}
+					},
+					"removing": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "RemoveEventArgs"
+								}
+							]
+						}
+					},
+					"select": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "SelectEventArgs"
+								}
+							]
+						}
+					},
+					"tagging": {
+						"type": {
+							"type": "reference",
+							"name": "EmitType",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"name": "TaggingEventArgs"
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		"apis": {},
+		"methods": {}
+	}
+}
