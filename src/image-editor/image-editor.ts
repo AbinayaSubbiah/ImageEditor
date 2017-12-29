@@ -1,20 +1,12 @@
 
 import { DropDownBase, SelectEventArgs, dropDownBaseClasses, FieldSettings, SPINNER_SIZE } from '../drop-down-base/drop-down-base';
-import { Popup, createSpinner, showSpinner, hideSpinner, Dialog } from '@syncfusion/ej2-popups';
+import { Dialog } from '@syncfusion/ej2-popups';
 import { IInput } from '@syncfusion/ej2-inputs';
-import { attributes } from '@syncfusion/ej2-base';
-import { Button } from '@syncfusion/ej2-buttons';
-import { NotifyPropertyChanges } from '@syncfusion/ej2-base';
-import { EventHandler, Property, Event, compile, L10n, EmitType, KeyboardEventArgs } from '@syncfusion/ej2-base';
-import { Animation, AnimationModel, Browser, Component, } from '@syncfusion/ej2-base';
-import { PopupEventArgs, FilteringEventArgs, DropDownList } from '../drop-down-list/drop-down-list';
-import { MultiSelectModel } from '../multi-select';
-import { ImageEditorModel } from '../multi-select/image-editor-model'
-import { Search } from '../common/incremental-search';
-import { createElement, append, addClass, removeClass, setStyleAttribute, closest, detach, remove } from '@syncfusion/ej2-base';
-import { getUniqueID, formatUnit, isNullOrUndefined, isUndefined } from '@syncfusion/ej2-base';
+import { EventHandler, Property, Event } from '@syncfusion/ej2-base';
+import { DropDownList } from '../drop-down-list/drop-down-list';
+import { ImageEditorModel } from './image-editor-model';
+import { createElement,isNullOrUndefined, Component} from '@syncfusion/ej2-base';
 /* tslint:disable */
-import { DataManager, Query } from '@syncfusion/ej2-data';
 import { SortOrder } from '@syncfusion/ej2-lists';
 import { Toolbar } from '@syncfusion/ej2-navigations'
 
@@ -271,6 +263,8 @@ export class ImageEditor extends Component<HTMLImageElement> {
         textwraper.style.position = 'absolute';
         textwraper.style.top = '50px';
         textwraper.style.left = '10px';
+        textwraper.style.background='transparent';
+        textwraper.style.borderWidth='0px 0px 2px 0';
         EventHandler.add(textwraper, "keyup", this.keyUp, this);
     }
     private keyUp(e: any): void {
