@@ -7,9 +7,8 @@ ImageEditor component is used to encompasses the processes of altering the image
 The list of dependencies required to use the ImageEditor component in your application is given below:
 
 ```javascript
-|-- @syncfusion/ej2-popups
+|-- @syncfusion/ej2-image-editor
     |-- @syncfusion/ej2-dialog
- |-- @syncfusion/ej2-navigation
     |-- @syncfusion/ej2-toolbar
 ```
 
