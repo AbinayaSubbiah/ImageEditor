@@ -22,6 +22,7 @@ import { Toolbar } from '@syncfusion/ej2-navigations'
 export class ImageEditor extends Component<HTMLImageElement> {
     public toolbar: Toolbar;
     public dialogObj: Dialog;
+    public image64Str: string;
     /**
      * Sets the CSS classes to root element of this component which helps to customize the
      * complete styles.
@@ -50,6 +51,12 @@ export class ImageEditor extends Component<HTMLImageElement> {
      */
     @Property(null)
     public negative: number;
+     /**
+     * An array of items that is used to configure Toolbar commands.
+     * @default [].
+     */
+    
+    public items: Array<object>;
 
     constructor(option?: ImageEditorModel, element?: HTMLImageElement) {
         super(option, element)
@@ -58,6 +65,8 @@ export class ImageEditor extends Component<HTMLImageElement> {
     private toolbarwrapper: HTMLElement;
     private tbarObj: Toolbar;
     private upload: HTMLElement
+    private canvas: HTMLCanvasElement;
+    private exportElem: HTMLElement
 
     protected preRender(): void {
         // pre render code snippets
@@ -83,12 +92,17 @@ export class ImageEditor extends Component<HTMLImageElement> {
         this.upload = createElement('input', { className: 'e-upload' });
         this.upload.setAttribute("type", "file");
         this.upload.style.display = 'none';
-        EventHandler.add(this.upload, "change", this.imageUpload);
+        EventHandler.add(this.upload, "change", this.imageUpload, this);
         this.wrapper.appendChild(this.upload);
         this.wrapper.style.backgroundImage = "url('../../src/multi-select/image/preview.gif')";
         this.element.src = this.src;
         this.element.height = this.height;
         this.element.width = this.height;
+        this.exportElem = createElement('a', { className: 'e-export' });
+        this.wrapper.appendChild(this.exportElem);
+        this.canvas = document.createElement('canvas');
+        this.wrapper.appendChild(this.canvas);
+        this.image64Str = "";
         let toolbar = new Toolbar({
             items: [
                 {
@@ -99,6 +113,9 @@ export class ImageEditor extends Component<HTMLImageElement> {
                 },
                 {
                     prefixIcon: 'e-paste-icon tb-icons', tooltipText: 'Paste'
+                },
+                {
+                    prefixIcon: 'e-export-icon tb-icons', tooltipText: 'Export'
                 },
                 { template: "<div><input type='text' id='list'/></div>" },
             ],
@@ -179,8 +196,10 @@ export class ImageEditor extends Component<HTMLImageElement> {
     }
     private imageUpload(e: Event): void {
         let reader = new FileReader();
+        let proxy = this;
         reader.addEventListener('load', function () {
             (document.getElementById('imgedit') as HTMLImageElement).src = reader.result;
+            proxy.image64Str = reader.result;
         });
         reader.readAsDataURL((e.target as HTMLInputElement).files[0]);
     }
@@ -199,14 +218,30 @@ export class ImageEditor extends Component<HTMLImageElement> {
         if (e.item.properties.prefixIcon == "e-paste-icon tb-icons") {
             this.onRotate(e);
         }
+        if (e.item.properties.prefixIcon == "e-export-icon tb-icons"){
+            this.onExport(e);
+        }
 
+    }
+    private onExport(e: any): void {
+        let image64Str = this.image64Str.replace(/^data:image\/(png|jpg);base64,/, '');
+        
+        this.exportElem.setAttribute('href', image64Str);
+        this.exportElem.setAttribute('download', "sample.png");
+        this.exportElem.click();
+        // let image = new Image();
+        // image.src = this.image64Str;
+        // let context = this.canvas.getContext('2d');
+        // image.onload = function(){
+        //     context.drawImage(image, 0, 0);
+        // }
     }
     private onCrop(e: any): void {
         this.dialogObj.show();
     }
     private onRotate(e: any): void {
-
-        this.element.style.transform = 'rotate(180deg)';
+        let degreeVal = this.element.style.transform.length ? parseInt(this.element.style.transform.replace(/\D+/g, '')) : 0;
+        this.element.style.transform = 'rotate(' + (degreeVal + 90) +'deg)';
     }
     public destroy(): void { }
 
