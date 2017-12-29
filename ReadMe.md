@@ -2,6 +2,17 @@
 
 ImageEditor component is used to encompasses the processes of altering the images sizes, image cropping, copying the images, contrast changes and brightening for the images.
 
+## Dependencies
+
+The list of dependencies required to use the ImageEditor component in your application is given below:
+
+```javascript
+|-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-dialog
+ |-- @syncfusion/ej2-navigation
+    |-- @syncfusion/ej2-toolbar
+```
+
 ## Setup your development environment
 
 To get started with the `ImageEditor`, you can clone the
@@ -12,17 +23,6 @@ git clone https://github.com/AbinayaSubbiah/ImageEditor
 cd ImageEditor
 npm install
 gulp build
-```
-
-## Dependencies
-
-The list of dependencies required to use the ImageEditor component in your application is given below:
-
-```javascript
-|-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-dialog
- |-- @syncfusion/ej2-navigation
-    |-- @syncfusion/ej2-toolbar
 ```
 
 ## Goal
