@@ -18,8 +18,12 @@ gulp build
 
 The list of dependencies required to use the ImageEditor component in your application is given below:
 
-* Toolbar
-* dialog
+```javascript
+|-- @syncfusion/ej2-popups
+    |-- @syncfusion/ej2-dialog
+ |-- @syncfusion/ej2-navigation
+    |-- @syncfusion/ej2-toolbar
+```
 
 ## Goal
 
