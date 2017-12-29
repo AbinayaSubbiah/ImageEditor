@@ -11,6 +11,7 @@ To get started with the `ImageEditor`, you can clone the
 git clone https://github.com/AbinayaSubbiah/ImageEditor
 cd ImageEditor
 npm install
+gulp build
 ```
 
 ## Dependencies
