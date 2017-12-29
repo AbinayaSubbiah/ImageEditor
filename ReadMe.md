@@ -2,6 +2,17 @@
 
 ImageEditor component is used to encompasses the processes of altering the images sizes, image cropping, copying the images, contrast changes and brightening for the images.
 
+## Setup your development environment
+
+To get started with the `ImageEditor`, you can clone the
+[ImageEditor quickstart](https://github.com/AbinayaSubbiah/ImageEditor) project using the following commands:
+
+```cmd
+git clone https://github.com/AbinayaSubbiah/ImageEditor
+cd ImageEditor
+npm install
+```
+
 ## Dependencies
 
 The list of dependencies required to use the ImageEditor component in your application is given below:
